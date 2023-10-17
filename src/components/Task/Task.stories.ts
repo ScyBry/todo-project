@@ -1,18 +1,27 @@
-// import { store } from '../store/store'
-// import Task from './Task'
+import { ReduxDecorator } from '../../providers/storybook/ReduxProvider'
+import Task from './Task'
 
-// export const TaskComponent = {
-// 	args: {
-// 		task: {
-// 			id: '1',
-// 			title: 'Component',
-// 			state: 'TASK_INBOX',
-// 		},
-// 	},
-// }
+export default {
+	component: Task,
+	title: 'Task',
+	decorators: [ReduxDecorator],
+	parameters: {
+		actions: { argTypesRegex: '^on[A-Z].*' },
+		controls: {
+			matchers: {
+				color: /(background|color)$/i,
+				date: /Date$/,
+			},
+		},
+	},
+}
 
-// export default {
-// 	title: 'Task',
-// 	component: Task,
-// 	decorators: [story => <Provider store={store}>{story()}</Provider>],
-// }
+export const TaskComponent = {
+	args: {
+		task: {
+			id: '2',
+			title: 'spdojf',
+			state: 'TASK_ARCHIVED',
+		},
+	},
+}
