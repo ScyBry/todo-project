@@ -1,4 +1,4 @@
-import { ReduxDecorator } from '../../providers/storybook/ReduxProvider'
+import { ReduxDecorator } from '../../providers/storybook/ReduxDecorator'
 import Task from './Task'
 
 export default {

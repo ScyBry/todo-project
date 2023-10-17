@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react'
-import { ReduxDecorator } from '../src/providers/storybook/ReduxProvider'
+import { ReduxDecorator } from '../src/providers/storybook/ReduxDecorator'
 
 const preview: Preview = {
 	decorators: [ReduxDecorator],
