@@ -74,6 +74,13 @@ const Task: FC<TaskProps> = ({ task }) => {
 				<button onClick={() => handleUpdateTaskName(task.id, name)}>
 					Изменить
 				</button>
+				<button onClick={() => handleUpdateTaskName(task.id, name)}>
+					Изменить
+				</button>
+
+				<button onClick={() => handleUpdateTaskName(task.id, name)}>
+					Изменить
+				</button>
 
 				<button onClick={() => handleDeleteTask(task.id)}>Удалить</button>
 			</div>
