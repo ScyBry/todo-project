@@ -64,7 +64,7 @@ const Task: FC<TaskProps> = ({ task }) => {
 				{task.state !== 'TASK_ARCHIVED' && (
 					<button onClick={() => handleUpdateTaskState(task.id, task.state)}>
 						{task.state === 'TASK_PINNED' ? (
-							<span>UnPin</span>
+							<span>Unpin</span>
 						) : (
 							<span>Pin</span>
 						)}
@@ -75,7 +75,7 @@ const Task: FC<TaskProps> = ({ task }) => {
 					Изменить
 				</button>
 
-				<button onClick={() => handleDeleteTask(task.id)}>Удалить</button>
+				<button onClick={() => handleDeleteTask(task.id)}>Удаffffлить</button>
 			</div>
 		</div>
 	)
