@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import { useAppSelector } from '../../hooks/redux'
 import { filter } from '../../utils/constants'
 import AddNewTask from '../AddNewTask'
-import Task from '../Task'
+import Task from '../Task/Task'
 import styles from './styles.module.sass'
 
 const TaskList: FC = () => {
